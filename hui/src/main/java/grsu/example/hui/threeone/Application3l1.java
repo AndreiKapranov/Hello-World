@@ -16,16 +16,18 @@ public class Application3l1 {
 		if (operation == '-') {
 			int c = a - b;
 			System.out.println("Операция -> -");
-			System.out.println(a + "-" + b + "=" + c);}
-			if (operation == '*') {
-				int c = a * b;
-				System.out.println("Операция -> *");
-				System.out.println(a + "*" + b + "=" + c);}
-			if (operation == '/') {
-				int c = a / b;
-				System.out.println("Операция -> /");
-				System.out.println(a + "/" + b + "=" + c);}
-
+			System.out.println(a + "-" + b + "=" + c);
 		}
-	}
+		if (operation == '*') {
+			int c = a * b;
+			System.out.println("Операция -> *");
+			System.out.println(a + "*" + b + "=" + c);
+		}
+		if (operation == '/') {
+			int c = a / b;
+			System.out.println("Операция -> /");
+			System.out.println(a + "/" + b + "=" + c);
+		}
 
+	}
+}
