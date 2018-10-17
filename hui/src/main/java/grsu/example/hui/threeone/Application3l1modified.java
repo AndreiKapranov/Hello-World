@@ -26,7 +26,7 @@ public class Application3l1modified {
 		case '/':
 			System.out.print(val + "/" + val1 + "=" + (val / val1));break;
 		default:
-			System.out.println("Ошибка:неизвестный оператор!!");}
+			System.out.println("Ошибка:неизвестный оператор!!!");}
 			
 			}
 			;
