@@ -6,29 +6,36 @@ public class Application3l1modified {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Первое число= ");
-		int val = scanner.nextInt();
+		double val = scanner.nextDouble();
 		System.out.print("Второе число= ");
-		int val1 = scanner.nextInt();
+		double val1 = scanner.nextDouble();
 		System.out.print("Операция -> ");
-		Scanner reader = new Scanner(System.in);
-		char operation = reader.next().charAt(0);
+		char operation = scanner.next().charAt(0);
 		scanner.close();
-		reader.close();
-		if (val1 == 0 && operation == '/') {
-			System.out.print("Ошибка:на нуль делить нельзя!");}
 		switch (operation) {
 		case '+':
-			System.out.print(val + "+" + val1 + "=" + (val + val1));break;
+			double result = val + val1;
+			System.out.print(val + "+" + val1 + "=" + result);
+			break;
 		case '-':
-			System.out.print(val + "-" + val1 + "=" + (val - val1));break;
+			double result1 = val - val1;
+			System.out.print(val + "-" + val1 + "=" + result1);
+			break;
 		case '*':
-			System.out.print(val + "*" + val1 + "=" + (val * val1));break;
+			double result2 = val * val1;
+			System.out.print(val + "*" + val1 + "=" + result2);
+			break;
 		case '/':
-			System.out.print(val + "/" + val1 + "=" + (val / val1));break;
-		default:
-			System.out.println("Ошибка:неизвестный оператор.");}
-			
+			if (val1 == 0.0) {
+				System.out.print("Ошибка:на нуль делить нельзя!");
+			} else {
+				double result3 = val / val1;
+				System.out.print(val + "/" + val1 + "=" + result3);
 			}
-			;
+			break;
+		default:
+			System.out.println("Ошибка:неизвестный оператор.");
 		}
-	
+
+	};
+}
