@@ -11,7 +11,7 @@ public class Application3l3 {
 		System.out.print("Enter integer value B > ");
 		int b = scanner.nextInt();
 		scanner.close();
-		if (b < a) {
+		if (b <= a) {
 			System.out.print("Error ");
 		}
 		for (int aa = a; aa < b; aa++) {
