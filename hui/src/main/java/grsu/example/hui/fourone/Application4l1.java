@@ -20,7 +20,7 @@ public class Application4l1 {
 		double array[] = new double[length];
 
 		for (int i = 0; i < length; i++) {
-			System.out.println("Insert array element #" + (i + 1) + ":");
+			System.out.println("Innsert array element #" + (i + 1) + ":");
 
 			array[i] = input.nextDouble();
 		}
