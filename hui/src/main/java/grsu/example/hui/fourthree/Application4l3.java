@@ -24,32 +24,30 @@ public class Application4l3 {
 		for (int i = 0; i < matrix.length; i++) {
 			for (int j = 0; j < matrix[i].length; j++) {
 
-				matrix[i][j] = random.nextDouble() * 26.0 - 10.0;
+				matrix[i][j] = random.nextDouble() * 25.0 - 10.0;
 				System.out.print("\t" + matrix[i][j]);
 			}
 			System.out.println();
 		}
 
 		for (int i = 0; i < matrix.length; i++) {
-			double sum = 0;
+			double sum = 0.0;
 			int z = 0;
-			double average = 0;
+			double average = 0.0;
 			for (int j = 0; j < matrix[i].length; j++) {
+
 				if (matrix[i][j] > 0) {
 
 					sum += matrix[i][j];
 					z = z + 1;
+
 					average = sum / z;
 				}
-
 			}
-			if (z == 0) {
-				System.out.println(i+ "\t"+"Error");
-			} else {
-				System.out.println(i + "\t" + "average:   " + average);
 
-			}
+			System.out.println(i + "\t" + "average:   " + average);
 
 		}
+
 	}
 }
