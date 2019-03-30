@@ -1,15 +1,11 @@
 package grsu.example.hui.fiveone;
 
-import static java.lang.Math.sqrt;
 import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
+
 import java.util.Scanner;
 
 public class Application5l1 {
-
-	double x = 0.0;
-	double y = 0.0;
-	double x1 = 0.0;
-	double y1 = 0.0;
 
 	static double distance(double x, double y, double x1, double y1) {
 		return sqrt(pow(x1 - x, 2) + pow(y1 - y, 2));
@@ -31,4 +27,3 @@ public class Application5l1 {
 
 	}
 }
-
