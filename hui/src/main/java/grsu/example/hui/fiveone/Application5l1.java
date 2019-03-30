@@ -9,6 +9,7 @@ public class Application5l1 {
 
 	static double distance(double x, double y, double x1, double y1) {
 		return sqrt(pow(x1 - x, 2) + pow(y1 - y, 2));
+		
 	}
 
 	public static void main(String... args) {
