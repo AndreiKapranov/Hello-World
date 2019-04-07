@@ -8,14 +8,15 @@ public class Application5l3 {
 
 		if (x < 0) {
 			return 0.0;
+		} else {
+			if (x >= 0 && x != 1.0) {
+				return (pow(x, 2) + 1.0);
+			}
+
+			else {
+				return 1.0;
+			}
 		}
-		if (x >= 0 && x != 1.0) {
-			return (pow(x, 2) + 1.0);
-		}
-		if (x == 1.0) {
-			return 1.0;
-		}
-		return x;
 	}
 
 	public static void main(String args[]) {
