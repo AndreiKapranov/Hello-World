@@ -3,31 +3,36 @@ package grsu.examle.hui.fivetwo;
 import java.util.Scanner;
 
 public class Aplication5l2 {
-	public static int gain(Integer x) {
-		if (x > 0) {
 
-			String helloString = x.toString();
+	public static int gain(int x) {
 
-			char[] helloChars = helloString.toCharArray();
-			char[] helloChars1 = new char[3];
+		char[] helloChars = ("" + x).toCharArray();
 
-			System.arraycopy(helloChars, 0, helloChars1, 0, helloChars.length);
-			helloChars[0] = helloChars[2];
-			helloChars[2] = helloChars1[0];
-			String invert = new String(helloChars);
+		char[] helloChars1 = new char[3];
 
-			int invert0 = Integer.parseInt(invert);
-			return invert0;
-		}
-		return 0;
+		System.arraycopy(helloChars, 0, helloChars1, 0, helloChars.length);
+		helloChars[0] = helloChars[2];
+		helloChars[2] = helloChars1[0];
+		int invert0 = Integer.parseInt(new String(helloChars));
+
+		return invert0;
 	}
 
 	public static void main(String args[]) {
+
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Enter positive three-digit integer number> ");
-		Integer x = scanner.nextInt();
+		int x = 0;
+		do {
+			System.out.println("Enter positive three-digit integer number> ");
+			x = scanner.nextInt();
+			if (x < 99 || x > 1000) {
+				System.out.println("I said positive three-digit integer number,let's try again. ");
+
+			}
+		} while (x < 99 || x > 1000);
 		scanner.close();
 		System.out.println("Result: " + gain(x));
 
 	}
+
 }
